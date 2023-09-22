@@ -1,0 +1,30 @@
+h1 {
+    color: rgb(255, 255, 255);
+    background-color: rgb(54, 81, 59);
+}
+
+h2 {
+    color: white
+}
+
+p {
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(54, 81, 59);
+    margin: 40px;
+    padding: 50px;
+
+}
+
+#list {
+    font-size: 10px;
+    color: white;
+}
+
+body {
+    background-color: rgb(127, 156, 134);
+}

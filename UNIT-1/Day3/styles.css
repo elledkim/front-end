@@ -28,3 +28,7 @@ p {
 body {
     background-color: rgb(127, 156, 134);
 }
+
+div, a {
+    text-align: center;
+}

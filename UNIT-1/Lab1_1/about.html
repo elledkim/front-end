@@ -2,72 +2,87 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>Laufey Quiz</title>
+    
 </head>
 <body>
     <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
+        <li id="main"><a href="index.html">Meet Laufey</a></li>
+        <li><a href="about.html">Test Your Knowledge!</a></li>
     </ul>
 
     <hr/>
-    <h1>About Me</h1>
+    <h1>The Laufey Quiz</h1>
 
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem ducimus nostrum, quia quae animi necessitatibus
-        similique itaque recusandae accusamus aut?</p>
+    <p>How much information can you remember?</p>
+    <br>
+    <img src="/UNIT-1/Lab1_1/pics/pic9.png" alt="pic9" class="center">
+    <br>
 
-        <h3 id="main">Subtitle</h3>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, blanditiis necessitatibus! Quod quia a
-        repellendus vero rem sint maiores, omnis quasi quidem exercitationem nesciunt enim voluptatibus quibusdam
-        dolores porro sapiente.
-    </p>
-    <a href="#last">Go to bottom</a>
+    <hr/>
 
-    <h3>Subtitle</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aperiam vero natus. Ipsa quisquam magni cum
-        voluptatibus at aspernatur illo ipsum assumenda voluptates omnis. Totam ducimus perspiciatis quod temporibus
-        excepturi.</p>
+    <form>
+        <h3>1) When was Laufey born?</h3>
+        <div>
+            <label for="username">Enter birthday:</label>
+            <input type="text" id="bday" name="bday" required>
+        </div>
 
-    <h3>Subtitle</h3>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero at eligendi, temporibus a eum quaerat possimus
-        ipsum tempora, sapiente porro reprehenderit quae vel veniam quis ducimus doloremque neque explicabo corrupti.
-    </p>
-    <ul>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-    </ul>
+        <br>
+        <h3>2) What is her twin sister's name?</h3>
+        <div>
+            <input type="radio" name="name" value="Julia" id="option-1">
+            <label for="option-1">Julia</label>
+            <input type="radio" name="name" value="Jules" id="option-2">
+            <label for="option-1">Jules</label>
+            <input type="radio" name="name" value="Junia" id="option-3">
+            <label for="option-1">Junia</label>
+            <input type="radio" name="name" value="June" id="option-4">
+            <label for="option-1">June</label>
+        </div>
 
-    <h3>Sub Sub Topic</h3>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero at eligendi, temporibus a eum quaerat possimus
-        ipsum tempora, sapiente porro reprehenderit quae vel veniam quis ducimus doloremque neque explicabo corrupti.
-    </p>
-    <ul>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-    </ul>
+        <br>
+        <h3>3) What instrument(s) did Laufey play?</h3>
+        <div>
+            <input type="checkbox" name="instrument" value="Piano" id="option-1">
+            <label for="option-1">Piano</label>
+            <input type="checkbox" name="instrument" value="Guitar" id="option-1">
+            <label for="option-1">Guitar</label>
+            <input type="checkbox" name="instrument" value="Cello" id="option-1">
+            <label for="option-1">Cello</label>
+            <input type="checkbox" name="instrument" value="Saxophone" id="option-1">
+            <label for="option-1">Saxophone</label>
+        </div>
+        
 
-    <h3>Subtitle</h3>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero at eligendi, temporibus a eum quaerat possimus
-        ipsum tempora, sapiente porro reprehenderit quae vel veniam quis ducimus doloremque neque explicabo corrupti.
-    </p>
-    <ul>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-    </ul>
+        <br>
+        <h3>4) Where did Laufey attend for college?</h3>
+        <div>
+            <select name="college" id="college">
+            <option value="1">The Julliard School</option>
+            <option value="2">The New England Conservatory</option>
+            <option value="3">The Manhattan School of Music</option>
+            <option value="4">The Berklee College of Music</option>
+            </select>
+        </div>
 
-    <h3 id="last">Another Sub Topic</h3>
-    <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus inventore, vel eum animi impedit dicta
-        natus, deleniti optio eveniet voluptatem quam repudiandae doloribus, dolore earum labore reiciendis assumenda
-        architecto aut!
-    </p>
-    <a href="#main">Go to top</a>
+        <br>
+        <h3>5) What is your favorite thing about Laufey?</h3>
+        <img src="/UNIT-1/Lab1_1/pics/pic10.png" alt="pic10" class="center">
+        <br><div><textarea name="fav" id="fav" cols="50" rows="10" placeholder="My favorite thing about Laufey is..."></textarea></div>
+
+        <br><br>
+
+        <div><input type="submit" value="Submit the form!"></div>
+
+    </form>
+
+    <br><div><a href="#main">Go to top</a></div>
+
 </body>
 
 </html>

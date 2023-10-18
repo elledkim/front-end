@@ -2,87 +2,121 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <title>Laufey Quiz</title>
     
-</head>
 <body>
-    <ul>
-        <li id="main"><a href="index.html">Meet Laufey</a></li>
-        <li><a href="about.html">Test Your Knowledge!</a></li>
-    </ul>
-
-    <hr/>
-    <h1>The Laufey Quiz</h1>
-
-    <p>How much information can you remember?</p>
-    <br>
-    <img src="/UNIT-1/Lab1_1/pics/pic9.png" alt="pic9" class="center">
-    <br>
-
-    <hr/>
-
-    <form>
-        <h3>1) When was Laufey born?</h3>
-        <div>
-            <label for="username">Enter birthday:</label>
-            <input type="text" id="bday" name="bday" required>
+    <nav class="white">
+        <div class="nav-wrapper">
+            <ul>
+                <li><a href="index.html" class="blue-grey-text">Meet Laufey</a></li>
+                <li><a href="about.html" class="blue-grey-text">Test Your Knowledge!</a></li>
+            </ul>
         </div>
+    </nav>
+
+    <hr />
+    <div class="container" id="main">
+        <h1>The Laufey Quiz</h1>
+
+        <p>How much information can you remember?</p>
+        <br>
+        <img src="/UNIT-1/Lab1_1/pics/pic9.png" alt="pic9" class="center">
+        <br>
+        <hr />
+
+        <form>
+            <h3>1) When was Laufey born?</h3>
+            <div class="input-field">
+                <input id="bday" type="text" class="validate">
+                <label for="bday">Enter birthday:</label>
+            </div>
+
+            <h3>2) What is her twin sister's name?</h3>
+            <p>
+                <label>
+                    <input class="with-gap" name="name" type="radio" value="Julia" />
+                    <span>Julia</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input class="with-gap" name="name" type="radio" value="Jules" />
+                    <span>Jules</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input class="with-gap" name="name" type="radio" value="Junia" />
+                    <span>Junia</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input class="with-gap" name="name" type="radio" value="June" />
+                    <span>June</span>
+                </label>
+            </p>
+
+            <h3>3) What instrument(s) did Laufey play?</h3>
+            <p>
+                <label>
+                    <input type="checkbox" name="instrument" value="Piano" />
+                    <span>Piano</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" name="instrument" value="Guitar" />
+                    <span>Guitar</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" name="instrument" value="Cello" />
+                    <span>Cello</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" name="instrument" value="Saxophone" />
+                    <span>Saxophone</span>
+                </label>
+            </p>
+
+            <h3>4) Where did Laufey attend for college?</h3>
+            <div class="input-field">
+                <select id="college">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">The Julliard School</option>
+                    <option value="2">The New England Conservatory</option>
+                    <option value="3">The Manhattan School of Music</option>
+                    <option value="4">The Berklee College of Music</option>
+                </select>
+                <label for="college">Select one</label>
+            </div>
+
+            <h3>5) What is your favorite thing about Laufey?</h3>
+            <img src="/UNIT-1/Lab1_1/pics/pic10.png" alt="pic10" class="center">
+            <div class="input-field">
+                <textarea id="fav" class="materialize-textarea" placeholder="My favorite thing about Laufey is..."></textarea>
+                <label for="fav">Your answer</label>
+            </div>
+
+            <button class="btn waves-effect waves-light blue-grey" type="submit" name="action" color="">Submit the form
+            </button>
+        </form>
 
         <br>
-        <h3>2) What is her twin sister's name?</h3>
-        <div>
-            <input type="radio" name="name" value="Julia" id="option-1">
-            <label for="option-1">Julia</label>
-            <input type="radio" name="name" value="Jules" id="option-2">
-            <label for="option-1">Jules</label>
-            <input type="radio" name="name" value="Junia" id="option-3">
-            <label for="option-1">Junia</label>
-            <input type="radio" name="name" value="June" id="option-4">
-            <label for="option-1">June</label>
-        </div>
+        <div><a href="#main">Go to top</a></div>
+        <br><br><br>
+    </div>
 
-        <br>
-        <h3>3) What instrument(s) did Laufey play?</h3>
-        <div>
-            <input type="checkbox" name="instrument" value="Piano" id="option-1">
-            <label for="option-1">Piano</label>
-            <input type="checkbox" name="instrument" value="Guitar" id="option-1">
-            <label for="option-1">Guitar</label>
-            <input type="checkbox" name="instrument" value="Cello" id="option-1">
-            <label for="option-1">Cello</label>
-            <input type="checkbox" name="instrument" value="Saxophone" id="option-1">
-            <label for="option-1">Saxophone</label>
-        </div>
-        
-
-        <br>
-        <h3>4) Where did Laufey attend for college?</h3>
-        <div>
-            <select name="college" id="college">
-            <option value="1">The Julliard School</option>
-            <option value="2">The New England Conservatory</option>
-            <option value="3">The Manhattan School of Music</option>
-            <option value="4">The Berklee College of Music</option>
-            </select>
-        </div>
-
-        <br>
-        <h3>5) What is your favorite thing about Laufey?</h3>
-        <img src="/UNIT-1/Lab1_1/pics/pic10.png" alt="pic10" class="center">
-        <br><div><textarea name="fav" id="fav" cols="50" rows="10" placeholder="My favorite thing about Laufey is..."></textarea></div>
-
-        <br><br>
-
-        <div><input type="submit" value="Submit the form!"></div>
-
-    </form>
-
-    <br><div><a href="#main">Go to top</a></div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>M.AutoInit();</script>
 </body>
 
 </html>
